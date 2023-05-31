@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'Cubito';
+  src: url('fonts/Cubito.otf') format('opentype');
+}
+@font-face {
+  font-family: 'GeneralSansBold';
+  src: url('fonts/GeneralSans-Bold.otf') format('opentype');
+}
+
+html,
+body {
+  height: 100%;
+
+}
+
+body {
+    height: 100%;
+    background-image: linear-gradient(to bottom left, #7c132a, #4321be); /* Cambia los colores degradados según tus preferencias */ 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -50px;
+    margin-bottom: 20px;
+  }
+
+.title {
+    font-family: 'Cubito', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    margin-bottom: 410px;
+  }
+  .calculator {
+    font-family: 'Cubito', Arial, Helvetica, sans-serif;
+    width: 480px;
+    margin-top: -400px;
+    text-align: center;
+    border: 3px solid #8d376c;
+    border-radius: 20px;
+    padding: 45px;
+    background-color: #f9f9f9;
+    box-shadow: 20px 20px 10px rgba(26, 2, 41, 0.26);
+  }
+  .calculator-title {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  input, button {
+    font-family: 'GeneralSansBold', Arial, Helvetica, sans-serif;
+    margin: 5px;
+    padding: 9px;
+    border-color:#f548f5;
+    border-radius: 30px;
+  }
+  
+  button {
+    margin-bottom: 10px;
+    font-family: 'Cubito', Arial, Helvetica, sans-serif;
+    background-color: #4435c7;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 15px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #020202;
+  }
+  
+  #resultado {
+    font-family: 'GeneralSansBold', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+  }
+  .calculator img {
+    position: absolute;
+    top: 347px;
+    left: 78%;
+    width: 180px;
+    height: 250px;
+  }
+.message {
+  font-family: 'Cubito', Arial, Helvetica, sans-serif;
+  position: fixed;
+  bottom: 450px;
+  left: 84%;
+  transform: translateX(-50%);
+  background-color: #0f0000;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 16px;
+  display: none;
+  z-index: 9999;
+}
+
+.slide-up {
+  animation-name: slideUp;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-20px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
+    display: none;
+  }
+}
+
+  footer {
+    font-family: 'Cubito', Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #0a0009;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  footer p {
+    font-family: 'Cubito', Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 5px;
+    font-size: 14px;
+  }
+  
+  footer a {
+    font-family: 'Cubito', Arial, Helvetica, sans-serif;
+    color: #ffabd5;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: rgb(179, 162, 255);
+    text-decoration: underline;
+  }
